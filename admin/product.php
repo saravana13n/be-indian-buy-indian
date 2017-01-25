@@ -9,13 +9,13 @@
 		$indian_product_name=$_POST['indian_product_name'];
 		$product_id=$_POST['product_id_indian'];
 		$sql="INSERT INTO indian_product (indian_product_name,product_id) VALUES ('$indian_product_name','$product_id')";
-    		pg_query($db,$sql);
+    		pg_query($sql);
 	}
 	if(isset($_POST['foreign_product_name'])){
 		$foreign_product_name=$_POST['foreign_product_name'];
 		$product_id=$_POST['product_id_foreign'];
 		$sql="INSERT INTO foreign_product (foreign_product_name,product_id) VALUES ('$foreign_product_name','$product_id')";
-    		pg_query($db,$sql);
+    		pg_query($sql);
 	}	
 	if(isset($_POST['product_name'])){
 		$product_name=$_POST['product_name'];
