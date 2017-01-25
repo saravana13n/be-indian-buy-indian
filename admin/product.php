@@ -14,7 +14,7 @@
 	if(isset($_POST['foreign_product_name'])){
 		$foreign_product_name=$_POST['foreign_product_name'];
 		$product_id=$_POST['product_id_foreign'];
-		$sql_$foreign="insert into foreign_product (foreign_product_name,product_id) values('$foreign_product_name','$product_id')";
+		$sql="insert into foreign_product (foreign_product_name,product_id) values('$foreign_product_name','$product_id')";
     	pg_query($sql);
 	}	
 	if(isset($_POST['product_name'])){
