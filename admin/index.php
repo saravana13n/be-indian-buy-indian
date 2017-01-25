@@ -2,7 +2,7 @@
 	if($_POST){
 		$product_name=$_POST['product_name'];
 		$sql_insert="insert into products (product_name) values('".$product_name."')";
-		$result = pg_query($db,$sql_insert);
+		pg_query($db,$sql_insert);
     	// pg_query($sql);
 	}
 	$sql="select * from products";
