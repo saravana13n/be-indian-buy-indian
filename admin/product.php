@@ -8,14 +8,14 @@
 	if(isset($_POST['indian_product_name'])){
 		$indian_product_name=$_POST['indian_product_name'];
 		$product_id=$_POST['product_id_indian'];
-		$sql="insert into indian_product (indian_product_name,product_id) values('$indian_product_name','$product_id')";
-    	pg_query($sql);
+		$sql_indian="insert into indian_product (indian_product_name,product_id) values('$indian_product_name','$product_id')";
+    	pg_query($sql_indian);
 	}
 	if(isset($_POST['foreign_product_name'])){
 		$foreign_product_name=$_POST['foreign_product_name'];
 		$product_id=$_POST['product_id_foreign'];
-		$sql="insert into foreign_product (foreign_product_name,product_id) values('$foreign_product_name','$product_id')";
-    	pg_query($sql);
+		$sql_$foreign="insert into foreign_product (foreign_product_name,product_id) values('$foreign_product_name','$product_id')";
+    	pg_query($sql_$foreign);
 	}	
 	if(isset($_POST['product_name'])){
 		$product_name=$_POST['product_name'];
