@@ -6,8 +6,8 @@
     $product_name=$row["product_name"];
 
 	if(isset($_POST['indian_product_name'])){
-// 		$indian_product_name=pg_escape_string($_POST['indian_product_name']);
-// 		$product_id=pg_escape_string($_POST['product_id_indian']);
+		$indian_product_name=pg_escape_string($_POST['indian_product_name']);
+		$product_id=pg_escape_string($_POST['product_id_indian']);
 // 		$sql="INSERT INTO indian_product (indian_product_name,product_id) VALUES ('$indian_product_name','$product_id')";
 //     		pg_query($sql);
 		$sql="INSERT INTO indian_product (indian_product_name,product_id) VALUES ('$indian_product_name',$product_id)";
