@@ -10,7 +10,7 @@
 // 		$product_id=pg_escape_string($_POST['product_id_indian']);
 // 		$sql="INSERT INTO indian_product (indian_product_name,product_id) VALUES ('$indian_product_name','$product_id')";
 //     		pg_query($sql);
-		$query = "INSERT INTO indian_product(indian_product_name, product_id) VALUES('" . $indian_product_name . "', '" . $product_id . "')";
+		$query = "INSERT INTO indian_product(indian_product_name, product_id) VALUESVALUES ('$indian_product_name','$product_id')";
 		$result = pg_query($query);
 		if (!$result) {
 		    $errormessage = pg_last_error();
