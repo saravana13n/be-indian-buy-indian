@@ -1,7 +1,7 @@
 <?php include('config.php');
 	$id=$_GET['id'];
 	$sql="select * from products where product_id=$id";
-    $res=pg_query($sql);
+    $res=pg_query($db,$sql);
     $row=pg_fetch_array($res);
     $product_name=$row["product_name"];
 
@@ -26,9 +26,9 @@
 	}
 
 	$sql_foreign="select * from foreign_product where product_id=$id";
-    $res_foreign=pg_query($sql_foreign);
+    $res_foreign=pg_query($db,$sql_foreign);
     $sql_indian="select * from indian_product where product_id=$id";
-    $res_indian=pg_query($sql_indian);
+    $res_indian=pg_query($db,$sql_indian);
 
 ?>
 <html>
