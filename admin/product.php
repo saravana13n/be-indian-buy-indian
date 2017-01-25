@@ -8,7 +8,7 @@
 	if(isset($_POST['indian_product_name'])){
 		$indian_product_name=$_POST['indian_product_name'];
 		$product_id=$_POST['product_id_indian'];
-		$sql="insert into indian_product (indian_product_name,product_id) values('$indian_product_name','$product_id')";
+		echo $sql="insert into indian_product (indian_product_name,product_id) values('$indian_product_name','$product_id')";
     	pg_query($sql);
 	}
 	if(isset($_POST['foreign_product_name'])){
