@@ -3,7 +3,7 @@ var ajaxUtils = (function(){
     
     function simulate(callbackFn) {
         $.mobile.loading( "show", {
-            text: "Simulating an AJAX call",
+            text: "Please wait!",
             textVisible: true,
             textonly: false
         });
