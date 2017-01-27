@@ -11,14 +11,18 @@
     
 // }
 
-ngApp.controller('listController',function($scope,$http){
+ngApp.controller('listController',function($scope,$http,$q){
+    var deferred = $q.defer();
     $scope.productArray=[];
     $http.get('categories.php').success(function(response){
         $scope.productA=response;
+        deferred.resolve($scope.productA);
     });
     ajaxUtils.simulate(function(){
         $scope.$apply(function(){
-            $scope.productArray=[].concat($scope.productA);
+             deferred.promise.then(function(data){
+                $scope.productArray=[].concat(data);
+            });
             // $scope.personArray = personArray;
         });
         $('ul.ngRepeat').listview('refresh');
