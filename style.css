@@ -11,6 +11,10 @@
     font-weight: bold;
     padding: 10px 5px;
     } 
+    .download-img{
+        width: 230px;
+        margin: 15px auto;
+    }
 .ui-filterable{
      margin-top:30px;
      margin-bottom:15px;
