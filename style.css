@@ -1,4 +1,17 @@
- .ui-filterable{
+    a:hover{
+        text-decoration: none;
+    }
+    .download-heading{
+        line-height: 20px;
+        margin-bottom: 25px;
+    }
+    .home-notification {
+    line-height: 20px;
+    color: #d24220;
+    font-weight: bold;
+    padding: 10px 5px;
+    } 
+.ui-filterable{
      margin-top:30px;
      margin-bottom:15px;
      }
