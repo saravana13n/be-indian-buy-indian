@@ -4,17 +4,12 @@ var ngApp = angular.module('app', ['ngRoute']);
 ngApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
-      when('/create', {
-        templateUrl: 'create.html',
-        controller: 'createController'
+      when('/download', {
+        templateUrl: 'download.html',
       }).
       when('/view/:id', {
         templateUrl: 'view.html',
         controller: 'viewController'
-      }).
-      when('/edit/:id', {
-        templateUrl: 'edit.html',
-        controller: 'editController'
       }).
       when('/list', {
           templateUrl: 'list.html',
@@ -24,6 +19,7 @@ ngApp.config(['$routeProvider',
         redirectTo: '/list'
       });
   }]);
+
 
 ngApp.directive('jqm', function($timeout) {
   return {
